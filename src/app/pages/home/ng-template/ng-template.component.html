@@ -1,0 +1,22 @@
+
+
+<div>
+
+  ng-template是一个Angular元素，用来渲染HTML，但是它永远不会显示出来，其实在渲染之前会把这个元素替换为一个注释,如果没有使用结构型指令，那ng-template里面的元素是不可见的！
+
+</div>
+
+<p>Hello</p>
+<ng-template>
+  这里的p永远不会显示出来的
+  <p>World</p>
+</ng-template>
+
+
+<ng-template [ngIf]="true">
+
+  <div *ngFor="let hero of heros;">{{hero.name}}</div>
+
+</ng-template>
+
+

@@ -1,0 +1,44 @@
+
+
+<h3>这是一个父组件,来测试父子组件交互</h3>
+
+<!--<div>
+
+  <div>第一种交互：父组件传值给子组件</div>
+
+  <mcj-com-first [hero]="hero"></mcj-com-first>
+
+</div>-->
+
+<!--<div>
+
+  <div>第二种交互：父组件传值给子组件</div>
+
+  <button (click)="changeName()">改变name值</button>
+
+  <button (click)="getName()">获取name值</button>
+
+  <button (click)="childCom.childName()">子组件方法</button>
+
+  <mcj-com-first [name]="name" #childCom></mcj-com-first>
+
+</div>-->
+
+<!--<div>
+
+  <button (click)="childTime.start()">开始</button>
+  <button (click)="childTime.stop()">暂停</button>
+
+  <mcj-com-first #childTime></mcj-com-first>
+
+</div>-->
+
+
+<div>
+
+  <button (click)="start()">开始</button>
+  <button (click)="stop()">暂停</button>
+
+  <mcj-com-first></mcj-com-first>
+
+</div>

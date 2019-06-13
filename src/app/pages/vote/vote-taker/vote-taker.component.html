@@ -1,0 +1,12 @@
+<div>
+
+  <h2>Should mankind colonize the Universe?</h2>
+
+  <!--<div>{{aa | currencyFormat}}</div>-->
+
+  <div>同意:{{agreeNum}}</div>
+  <div>不同意:{{disAgreeNum}}</div>
+
+  <mcj-vote-child *ngFor="let voter of voters" [voter]="voter" (voteClick)="voteClick($event)"></mcj-vote-child>
+
+</div>

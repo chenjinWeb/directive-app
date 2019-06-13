@@ -1,0 +1,13 @@
+
+<h4>UnlessDirective with template</h4>
+
+<!--<div *mcjUnless="condition">孟陈进</div>-->
+
+<ng-container *mcjUnless="condition" let m>
+
+  <div>孟陈进{{num}}</div>
+
+</ng-container>
+
+<button (click)="condition = true">true</button>
+<button (click)="condition = false">false</button>

@@ -1,0 +1,13 @@
+<div>
+
+  <span>{{voter}}</span>
+
+  <div>
+    <button [disabled]="btnAble" (click)="voterClick(true)">同意</button>
+  </div>
+
+  <div>
+    <button [disabled]="btnAble" (click)="voterClick(false)">不同意</button>
+  </div>
+
+</div>

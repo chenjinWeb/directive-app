@@ -1,0 +1,41 @@
+<!--<p *ngIf="true">
+  Expression is true and ngIf is true.
+  This paragraph is in the DOM.
+</p>
+<p *ngIf="false">
+  Expression is false and ngIf is false.
+  This paragraph is not in the DOM.
+</p>
+
+<p [style.display]="'block'">
+  Expression sets display to "block".
+  This paragraph is visible.
+</p>
+<p [style.display]="'none'">
+  Expression sets display to "none".
+  This paragraph is hidden but still in the DOM.
+</p>-->
+
+<ng-template [ngIf]="hero">
+
+  <div class="name">{{hero.name}}</div>
+
+</ng-template>
+
+
+
+<div *ngFor="let hero of heros; let i = index; let odd = odd;">
+
+  <ng-container *ngIf="hero.age>24">{{hero.name}}</ng-container>
+
+</div>
+
+
+<!--<ng-template ngFor [ngForOf]="heros" let-hero let-i="index" let-odd="odd">
+
+  <div>{{i}}{{hero.name}}</div>
+
+</ng-template>-->
+
+
+

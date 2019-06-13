@@ -1,0 +1,12 @@
+<div>
+
+  <!--<p mcjHighlight [highColor]="'red'">Highlight me!</p>-->
+
+  <!--这里的[mcjHighlight]表示指令也是表示传递的值-->
+  <p [mcjHighlight]="color">Highlight me!</p>
+
+  <input type="radio" name="color" (click)="color = 'blue'"/>blue
+  <input type="radio" name="color" (click)="color = 'yellow'"/>yellow
+  <input type="radio" name="color" (click)="color = 'green'"/>green
+
+</div>
