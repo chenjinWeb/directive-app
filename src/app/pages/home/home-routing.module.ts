@@ -5,11 +5,13 @@ import {NgifComponent} from './ngif/ngif.component';
 import {NgTemplateComponent} from './ng-template/ng-template.component';
 import {CreateUnlessComponent} from './create-unless/create-unless.component';
 import {ShowToolTipComponent} from './show-tool-tip/show-tool-tip.component';
+import {MyGuardGuard} from '../../guard/my-guard.guard';
 
 const routes: Routes = [
   {
     path:'home',
-    component:HomeComponent
+    component:HomeComponent,
+    canActivate:[MyGuardGuard]
   },
   {
     path:'ngif',

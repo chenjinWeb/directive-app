@@ -30,6 +30,10 @@ const routes: Routes = [
   {
     path:'',
     loadChildren: () => import('src/app/pages/rx/rx.module').then(m => m.RxModule)
+  },
+  {
+    path:'',
+    loadChildren: () => import('src/app/pages/my-router/my-router.module').then(m => m.MyRouterModule)
   }
 ];
 
