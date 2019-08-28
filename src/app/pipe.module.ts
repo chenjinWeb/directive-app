@@ -1,14 +1,17 @@
 
 import {NgModule} from '@angular/core';
 import {CurrencyFormatPipe} from './pipe/currency-format.pipe';
+import { JsonFormatPipe } from './pipe/json-format.pipe';
 
 @NgModule({
   declarations: [
-    CurrencyFormatPipe
+    CurrencyFormatPipe,
+    JsonFormatPipe
   ],
 
   exports: [
-    CurrencyFormatPipe
+    CurrencyFormatPipe,
+    JsonFormatPipe
   ]
 
 })

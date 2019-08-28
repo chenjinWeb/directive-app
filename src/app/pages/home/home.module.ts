@@ -8,11 +8,13 @@ import { NgifComponent } from './ngif/ngif.component';
 import { NgTemplateComponent } from './ng-template/ng-template.component';
 import { CreateUnlessComponent } from './create-unless/create-unless.component';
 import { ShowToolTipComponent } from './show-tool-tip/show-tool-tip.component';
+import { BaseModule } from 'src/app/base-module';
 
 @NgModule({
   declarations: [HomeComponent, NgifComponent, NgTemplateComponent, CreateUnlessComponent, ShowToolTipComponent],
   imports: [
     CommonModule,
+    BaseModule,
     HomeRoutingModule,
     DirectivesModule
   ]

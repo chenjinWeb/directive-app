@@ -13,4 +13,9 @@ export class HomeComponent implements OnInit {
   }
   color:string
 
+  userInfo={
+    name:'mcj',
+    age:20
+  }
+
 }
