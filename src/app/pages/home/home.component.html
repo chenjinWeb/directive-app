@@ -11,4 +11,10 @@
 
   <div>{{userInfo | jsonFormat:'123'}}</div>
 
+  <mcj-home-child [home]='home'></mcj-home-child>
+
+  <button (click)="changeHome()">改变home的值</button>
+
+  <input type="text" mcjFocus />
+
 </div>

@@ -1,5 +1,5 @@
 import {NgModule} from "@angular/core";
-import {HighlightDirective, TooltipDirective, UnlessDirective} from './directives/index'
+import {HighlightDirective, TooltipDirective, UnlessDirective, FocusDirective} from './directives/index'
 
 @NgModule({
   imports: [
@@ -8,12 +8,14 @@ import {HighlightDirective, TooltipDirective, UnlessDirective} from './directive
   declarations: [
     HighlightDirective,
     UnlessDirective,
-    TooltipDirective
+    TooltipDirective,
+    FocusDirective
   ],
   exports: [
     HighlightDirective,
     UnlessDirective,
-    TooltipDirective
+    TooltipDirective,
+    FocusDirective
   ],
   providers: [
 

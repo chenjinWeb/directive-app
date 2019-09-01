@@ -1,0 +1,12 @@
+
+<div>
+
+  <div>执行任务</div>
+
+  <button (click)="announce()">开始分发任务</button>
+
+  <mcj-subject-child *ngFor="let astronaut of astronauts;" [astronaut]="astronaut"></mcj-subject-child>
+
+</div>
+
+

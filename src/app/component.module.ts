@@ -1,16 +1,20 @@
 
 import {NgModule} from '@angular/core';
 import {
-  VoteChildModule
+  VoteChildModule, HomeChildModule, SubjectChildModule
 } from './components';
 
 @NgModule({
   declarations: [],
   imports: [
-    VoteChildModule
+    VoteChildModule,
+    HomeChildModule,
+    SubjectChildModule
   ],
   exports: [
-    VoteChildModule
+    VoteChildModule,
+    HomeChildModule,
+    SubjectChildModule
   ]
 
 })
